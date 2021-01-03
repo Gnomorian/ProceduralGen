@@ -1,5 +1,6 @@
 package nz.williamc.proceduralgen.command;
 
+import nz.williamc.proceduralgen.exception.ProcGenException;
 import nz.williamc.proceduralgen.generators.map.NewWorldBasicGenerator;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -18,7 +19,7 @@ public class NewWorldCommand extends CommandExecutorBase {
         try {
             new NewWorldBasicGenerator(worldName).generate();
             sender.sendMessage("Created Empty world " + worldName);
-        } catch (Exception e) {
+        } catch (ProcGenException e) {
             Bukkit.getLogger().severe(e.getMessage());
             e.printStackTrace();
         }

@@ -1,5 +1,6 @@
 package nz.williamc.proceduralgen.command;
 
+import nz.williamc.proceduralgen.exception.ProcGenException;
 import nz.williamc.proceduralgen.generators.map.NewWorldBasicGenerator;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
@@ -25,7 +26,8 @@ public class StartDungeonCommand extends CommandExecutorBase {
                 player.setGameMode(GameMode.CREATIVE);
                 player.teleport(new Location(Bukkit.getWorld(worldName), 0, 0, 0));
                 return true;
-            } catch (Exception e) {
+            } catch (ProcGenException e) {
+                Bukkit.getLogger().severe(e.getMessage());
                 e.printStackTrace();
             }
         }
