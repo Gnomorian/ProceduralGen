@@ -1,6 +1,6 @@
 package nz.williamc.proceduralgen.command;
 
-import nz.williamc.proceduralgen.generators.NewWorldBasicGenerator;
+import nz.williamc.proceduralgen.generators.map.NewWorldBasicGenerator;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
