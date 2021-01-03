@@ -1,0 +1,15 @@
+- tile:
+    # the name of the .schematic file
+    name: doorway
+    spawnpoint: true
+    # list of 6 sides of a tile, can other tiles connect to that side?
+    connectable_directions:
+      # any tile can connect to this side
+      # assuming this tile is valid for that tiles south connection
+      - north: [any]
+      - south: [sewer1, sewer2, sewer3]
+      - east: [any]
+      - west: [any]
+      - top: [any]
+      # - bottom: any
+

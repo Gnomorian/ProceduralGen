@@ -1,0 +1,16 @@
+name: WCProceduralGen
+version: ${project.version}
+main: nz.williamc.proceduralgen.ProceduralGen
+api-version: 1.16
+authors: [ WilliamCameron ]
+depend:
+  - WorldEdit
+commands:
+  startDungeon:
+    description: create a procedually generated new dungeon world with the given name and teleport to it
+  wspawn:
+    description: teleport to the spawn of the given worldname
+  delworld:
+    description: delete a world by name
+  newworld:
+    description: create an empty world by name
