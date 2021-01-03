@@ -1,4 +1,4 @@
-package nz.williamc.proceduralgen;
+package nz.williamc.proceduralgen.generators.chunk;
 
 import org.bukkit.World;
 import org.bukkit.generator.ChunkGenerator;

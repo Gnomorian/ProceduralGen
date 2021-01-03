@@ -1,6 +1,6 @@
-package nz.williamc.proceduralgen.generators;
+package nz.williamc.proceduralgen.generators.map;
 
-import nz.williamc.proceduralgen.BlankChunkGenerator;
+import nz.williamc.proceduralgen.generators.chunk.BlankChunkGenerator;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.WorldCreator;
